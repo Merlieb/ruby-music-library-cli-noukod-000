@@ -1,7 +1,8 @@
 class MusicLibraryController
 
   def initialize(path = "./db/mp3s")
-
+    MusicImporter.new(path).import
+    end
     def call
     option = ""
 
@@ -85,8 +86,7 @@ class MusicLibraryController
 
   end
 
-end"
-    MusicImporter.new(path).import
-  end
+end
+    
 
 end
