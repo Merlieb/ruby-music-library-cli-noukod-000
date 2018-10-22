@@ -85,7 +85,7 @@ class MusicLibraryController
 
   end
 
-end" 
+end"
     MusicImporter.new(path).import
   end
 
